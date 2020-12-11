@@ -1,0 +1,13 @@
+
+spring:
+  application:
+    name: msv-poc-coleta
+  profiles:
+    active: dev
+    
+## Topicos Kafka    
+topic:
+  kafka:
+    fila:
+      coleta: FILA_COLETA
+      coleta_lista: FILA_COLETA_LISTA
