@@ -37,8 +37,7 @@ public class EnviarColetaProduce {
 	
 	public void enviarLoteColeta(List<ColetaDTO> coleta) throws Exception {
 		log.info("Postando mensagem no topico: {}", topicoColetaLista);
-//		kafkaTemplate.send(topicoColetaLista, Util.paraJson(coleta) );
-		kafkaTemplate.send(topicoColetaLista, "testando");
+		kafkaTemplate.send(topicoColetaLista, Util.paraJson(coleta) );
 		log.info("mensagem postada");
 }
 }
